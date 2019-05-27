@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="detail-page.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+    </head>
+    <body>
+        <main>
+        <section id="content">
+            <p>Sooyoung's Mobile Museum App</p>
+            <h1>Jackson Pollock</h1>
+            <img src="https://www.metmuseum.org/toah/images/hb/hb_57.92.jpg">
+        </section>
+        <section id='comments'>
+            <h2>Comments</h2>
+        <section class='comment'>
+              <h3>Arien said:</h3>
+              <p>"This is definitely one of my favorites!"</p>
+            </section>
+          </section>
+          <form onsubmit="submitComment(); return false">
+            <div class="formSection">
+              <label for="name">Name:</label>
+              <input type="text" id="name">
+            </div>
+            <div class="formSection">
+              <label for="msg">Message:</label>
+              <textarea id="msg"></textarea>
+            </div>
+            <div class="button">
+              <button type="default">Post your comment</button>
+            </div>
+          </form>
+          </main>
+    </body>
+    <footer>
+        <p>Made with Love</p>
+    </footer>
+</html>
