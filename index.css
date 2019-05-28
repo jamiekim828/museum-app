@@ -1,29 +1,48 @@
 body {
-    background: lightsalmon;
-    font-family: inconsolata;
+    background: rgb(136, 163, 80);
     text-align: center;
     margin: 0;
     padding: 2rem 0;
-    width: 100%
+    width: 100%;
 }
 main {
     background: white;
     width: 90%;
     margin: auto;
-    border-radius: 5px;
-    padding: 2rem 0;
+    border-radius: 10px;
+    padding: 5rem 0;
   }
 h1 {
-      margin: 3rem 1rem 6rem 1rem;
+    display: block;
+    font-family: 'Libre Baskerville', serif;
+    margin: 3rem 1rem 6rem 1rem;
+    color: rgb(27, 94, 33);
   }
+h2 {
+    display: block;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(27, 94, 33);
+}
 .artObject {
-    max-width: 80%;
+    max-width: 70%;
     max-height: 20rem;
-    margin: 1rem;
+    margin: 3rem;
 }
 #gallery {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+}
+footer p {
+    display: block;
+    color: white;
+    font-family: Verdana;
+}
+@media all and (max-width: 350px) {
+    #gallery {
+        flex-direction: column;
+        align-items: center;
+    }
 }
