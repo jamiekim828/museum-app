@@ -10,5 +10,4 @@ function submitComment() {
     p.innerHTML = msg;
     comment.appendChild(h3);
     comment.appendChild(p);
-    console.log(comment);
 };
