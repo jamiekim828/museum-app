@@ -51,11 +51,58 @@ form {
 }
 .button {
     font: inherit;
-    align-items: flex-end;
-    text-align: center;
     cursor: default;
-    background-color: rgb(94, 92, 92);
+    border: none;
+    padding: 15px 32px;
+    margin-left: 60%;
+}
+label {
+    display: block;
+    text-align: center;
+    font-family: tahoma;
+    font-size: 12px;
+    padding: 15px 32px;
+}
 
+.formSection{
+    text-align: center;
+}
+.commentBox {
+    display: block;
+
+}
+input{
+    width: 80%;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    min-height: 1rem;
+    font-size: 1.2rem;
+    display: block;
+    justify-items: center;
+    text-align: start;
+    margin: auto;
+    font: 400 11px system-ui;
+}
+textarea{
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    overflow-wrap: break-word;
+    border-width: 1px;
+    border-style: solid;
+    padding: 2px;
+    width: 80%;
+    min-height: 100px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: block;
+    justify-items: center;
+    text-align: start;
+    margin: auto;
+    font: 400 11px system-ui;
 }
 footer {
     background: rgb(196,34,34);
