@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <script src="detail-page.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <title>Gallery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="detail-page.css">
     </head>
     <body>
         <main>
-        <section id="content">
-            <p>Sooyoung's Mobile Museum App</p>
-            <h1>Jackson Pollock</h1>
-            <img src="https://www.metmuseum.org/toah/images/hb/hb_57.92.jpg">
+        <section>
+            <h1 class="artist">Andy Warhol</h1>
+            <h3 class="artname">Campbell's Soup Cans, 1962</h2>
+            <h3 class="museum">Museum of Modern Art</h3>
+            <h5 class="address">11 W 53rd St, New York, NY</h4>
+            <img src="https://www.alletop10lijstjes.nl/wp-content/uploads/2016/12/Campbells-Soup-Cans.jpg" class="soupcans">
         </section>
+        <br><br><br>
         <section id='comments'>
             <h2>Comments</h2>
-        <section class='comment'>
+        </section>
+        <section class='comment' id="newbox">
               <h3>Arien said:</h3>
               <p>"This is definitely one of my favorites!"</p>
-            </section>
-          </section>
-          <form onsubmit="submitComment(); return false">
+        </section>
+        <form onsubmit="submitComment(); return false">
             <div class="formSection">
               <label for="name">Name:</label>
               <input type="text" id="name">
             </div>
             <div class="formSection">
               <label for="msg">Message:</label>
-              <textarea id="msg"></textarea>
+              <textarea type="text" value="Enter" id="msg"></textarea>
+              <p id="para"></p>
             </div>
             <div class="button">
-              <button type="default">Post your comment</button>
+              <button type="default">Submit</button>
             </div>
-          </form>
-          </main>
+        </form>
+        </main>
+        <script src="detail-page.js"></script>
     </body>
     <footer>
-        <p>Made with Love</p>
+        <p>made with love by sooyoung in 2019</p>
     </footer>
 </html>
